@@ -1,0 +1,26 @@
+class circle:
+    def __init__(self, radius):
+        self.radius=radius
+
+    def area(self):
+        return 3.14*self.radius*self.radius
+class square:
+    def __init__(self,side):
+        self.side=side
+    def area(self):
+        return self.side*self.side
+
+class triangle:
+    def __init__(self,base,height):
+        self.base=base
+        self.height=height
+
+    def area(self):
+        return 0.5 *self.base* self.height
+c=circle(5)
+s=square(4)
+t=triangle(6,3)
+shapes=[c,s,t]
+for shape in shapes:
+    print(shape.area())
+        
